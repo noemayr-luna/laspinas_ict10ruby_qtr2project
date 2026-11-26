@@ -11,32 +11,32 @@ body {
 }
 
 
-.bg1 {
-    background-image: url("Noemayr.png");
-    background-size: 100% auto;
-    background-position: top center;
-    background-repeat: no-repeat;
-
-    min-height: 100vh;
+.bg1 img {
     width: 100%;
+    height: auto;
+    display: block;
 }
 
 
 .bg2 {
-    background-image: url("hyperarea.png");
-    background-size: 100% auto;
-    background-position: top center;
-    background-repeat: no-repeat;
-
-    min-height: 100vh;
+    position: relative;
     width: 100%;
-    padding: 40px 30px;
-    text-align: center;
 }
 
+.bg2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 .navigation {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+
     width: 90%;
-    margin: 25px auto;
     border-collapse: collapse;
     background-color: #263b2c;
 }
@@ -59,13 +59,12 @@ body {
 }
 
 
-@media (max-width: 700px) {
-    .bg2 {
-        padding: 25px 10px;
-    }
 
+
+@media (max-width: 700px) {
     .navigation {
-        width: 100%;
+        top: 15px;
+        width: 96%;
     }
 
     .navigation td {
@@ -75,12 +74,11 @@ body {
     .navigation a {
         font-size: 12px;
     }
+
+    #message {
+        top: 90px;
+        font-size: 12px;
+    }
 }
 
-/* PYTHON MESSAGE */
-#message {
-    text-align: center;
-    color: white;
-    font-weight: bold;
-}
 
