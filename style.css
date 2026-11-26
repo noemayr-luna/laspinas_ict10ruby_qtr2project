@@ -10,8 +10,9 @@ body {
     color: #263b2c;
 }
 
+
 .bg1 {
-    background-image: url("noemayr.png");
+    background-image: url("Noemayr.png");
     background-size: 100% auto;
     background-position: top center;
     background-repeat: no-repeat;
@@ -19,6 +20,7 @@ body {
     min-height: 100vh;
     width: 100%;
 }
+
 
 .bg2 {
     background-image: url("hyperarea.png");
@@ -31,7 +33,6 @@ body {
     padding: 40px 30px;
     text-align: center;
 }
-
 
 .navigation {
     width: 90%;
@@ -57,6 +58,7 @@ body {
     color: pink;
 }
 
+
 @media (max-width: 700px) {
     .bg2 {
         padding: 25px 10px;
@@ -75,8 +77,10 @@ body {
     }
 }
 
+/* PYTHON MESSAGE */
 #message {
     text-align: center;
     color: white;
     font-weight: bold;
 }
+
