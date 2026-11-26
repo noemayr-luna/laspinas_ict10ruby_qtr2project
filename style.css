@@ -11,19 +11,19 @@ body {
 }
 
 .bg1 {
-    background-image: url("Noemayr.png");
-    background-size: cover;
-    background-position: center;
+    background-image: url("noemayr.png");
+    background-size: 100% auto;
+    background-position: top center;
     background-repeat: no-repeat;
 
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 
 .bg2 {
     background-image: url("hyperarea.png");
-    background-size: cover;
-    background-position: center;
+    background-size: 100% auto;
+    background-position: top center;
     background-repeat: no-repeat;
 
     min-height: 100vh;
