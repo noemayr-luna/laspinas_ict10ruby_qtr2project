@@ -1,81 +1,19 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Georgia, serif;
-    color: #263b2c;
+    margin: 0;
 }
 
 .bg1 {
-    background-image: url("Noemayr.png");
+    background-image: url("meetme.png");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-
     height: 100vh;
-    width: 100%;
 }
 
 .bg2 {
     background-image: url("hyperarea.png");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-
     min-height: 100vh;
-    width: 100%;
-    padding: 40px 30px;
-    text-align: center;
-}
-
-/* NAVIGATION TABLE */
-.navigation {
-    width: 90%;
-    margin: 25px auto;
-    border-collapse: collapse;
-    background-color: #263b2c;
-}
-
-.navigation td {
-    border: 2px solid #d6c6a5;
-    padding: 15px;
-    text-align: center;
-}
-
-.navigation a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.navigation a:hover {
-    color: pink;
-}
-
-@media (max-width: 700px) {
-    .bg2 {
-        padding: 25px 10px;
-    }
-
-    .navigation {
-        width: 100%;
-    }
-
-    .navigation td {
-        padding: 10px 5px;
-    }
-
-    .navigation a {
-        font-size: 12px;
-    }
-}
-
-#message {
-    text-align: center;
-    color: white;
-    font-weight: bold;
+    padding: 30px;
+    box-sizing: border-box;
 }
