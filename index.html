@@ -4,8 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>meet the GOAT</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- PyScript -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.8.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+
+    <!-- Background image settings -->
+    <style>
+        .bg1 {
+            background-image: url("meeetme.png");
+            background-size: 100% auto;
+            background-position: top center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            width: 100%;
+        }
+
+        .bg2 {
+            background-image: url("hyperarea.png");
+            background-size: 100% auto;
+            background-position: top center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -56,13 +83,17 @@ def thank_you(event):
     event.preventDefault()
 
     link = event.currentTarget.href
+    new_tab = event.currentTarget.target == "_blank"
 
     document.querySelector("#message").innerText = "Awwh, thanks for clicking!"
 
-    window.setTimeout(
-        lambda: window.location.assign(link),
-        1500
-    )
+    def redirect():
+        if new_tab:
+            window.open(link, "_blank")
+        else:
+            window.location.assign(link)
+
+    window.setTimeout(redirect, 1500)
     </script>
 
 </body>
